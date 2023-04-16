@@ -55,7 +55,7 @@ def main():
 
             if data_type == 'temp':
                 sensor, temp, timestamp = parsed_data
-                if temp not in [0.0, 1.0] and sensor not in ['ocp_tpu', 'ocp_gpu', 'soc', 'VIRTUAL-SKIN-HINT', 'cellular-emergency', 'VIRTUAL-SKIN-GPU', 'VIRTUAL-SKIN-CPU', 'BCL_TPU_LOW_TEMP', 'USB-MINUS-USB2', 'USB-MINUS-NEUTRAL', 'BCL_GPU_LOW_TEMP']:
+                if temp not in [0.0, 1.0] and sensor not in ['ocp_tpu', 'ocp_gpu', 'soc', 'VIRTUAL-SKIN-HINT', 'vdroop1', 'cellular-emergency', 'VIRTUAL-SKIN-GPU', 'VIRTUAL-SKIN-CPU', 'BCL_TPU_LOW_TEMP', 'USB-MINUS-USB2', 'USB-MINUS-NEUTRAL', 'BCL_GPU_LOW_TEMP']:
                     data[sensor].append((timestamp, temp))
                     print(f"{timestamp} Temperature data: {sensor} - {temp}")  # Print temperature data
 
