@@ -67,7 +67,7 @@ def main():
 
     while True:
         update_plot(data, ax)
-        plt.pause(0.01)
+        plt.pause(.2)
 
 if __name__ == '__main__':
     main()
